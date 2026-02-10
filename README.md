@@ -46,3 +46,15 @@ complated:=false
 ```Bash
 http delete localhost:3000/api/v1/tasks/update-one-task-by-user-id-and-task-id/:user-id/:task-id
 ```
+
+
+# Project Requirement
+JavaScript
+NodeJS
+NPM
+Express
+Dotenv
+Nodemon
+Prisma@6
+Prisma/Client@6
+Git
