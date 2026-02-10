@@ -58,3 +58,8 @@ Nodemon
 Prisma@6
 Prisma/Client@6
 Git
+
+# DotEnv File For Example
+```.env
+DATABASE_URL="mysql://admin:your_password@localhost:3306/todo-db"
+```
