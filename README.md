@@ -25,7 +25,7 @@ http get localhost:3000/api/v1/users/get-one-user-by-id/:id
 http put localhost:3000/api/v1/users/update-one-user-by-id/:id \
 name=Amin
 ```
-4. Delete One User By ID
+5. Delete One User By ID
 ```Bash
 http delete localhost:3000/api/v1/users/delete-one-user-by-id/:id
 ```

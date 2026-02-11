@@ -34,3 +34,12 @@ export const updateOneUserById = async (req, res) => {
   });
   res.json(result);
 };
+
+// 5. Delete One User By ID
+export const deleteOneUserById = async (req, res) => {
+  const id = Number(req.params.id);
+  const result = await prisma.user.delete({
+    where: { id },
+  });
+  res.json(result);
+};
