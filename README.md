@@ -12,7 +12,7 @@
 http post localhost:3000/api/v1/users/create-one-user \
 name=Amin
 ```
-2. Get All User
+2. Get All Users
 ```Bash
 http get localhost:3000/api/v1/users/get-all-users
 ```

@@ -8,3 +8,9 @@ export const createOneUser = async (req, res) => {
   });
   res.json(result);
 };
+
+// 2. Get All Users
+export const getAllUsers = async (req, res) => {
+  const result = await prisma.user.findMany();
+  res.json(result);
+};
