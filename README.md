@@ -29,6 +29,13 @@ name=Amin
 ```Bash
 http delete localhost:3000/api/v1/users/delete-one-user-by-id/:id
 ```
+6. Get All User Tasks By User ID
+```Bash
+http get localhost:3000/api/v1/users/get-all-user-tasks-by-user-id/:id
+```
+
+
+
 ## Tasks EndPoints
 1. Create One Task By User ID
 ```Bash

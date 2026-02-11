@@ -3,6 +3,7 @@ import {
   createOneUser,
   deleteOneUserById,
   getAllUsers,
+  getAllUserTasksByUserId,
   getOneUserById,
   updateOneUserById,
 } from "../controllers/users.js";
@@ -13,5 +14,6 @@ router.get("/get-all-users", getAllUsers);
 router.get("/get-one-user-by-id/:id", getOneUserById);
 router.put("/update-one-user-by-id/:id", updateOneUserById);
 router.delete("/delete-one-user-by-id/:id", deleteOneUserById);
+router.get("/get-all-user-tasks-by-user-id/:id", getAllUserTasksByUserId);
 
 export default router;

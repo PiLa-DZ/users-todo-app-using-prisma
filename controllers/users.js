@@ -43,3 +43,15 @@ export const deleteOneUserById = async (req, res) => {
   });
   res.json(result);
 };
+
+// 6. Get All User Tasks By User ID
+export const getAllUserTasksByUserId = async (req, res) => {
+  const id = Number(req.params.id);
+  const result = await prisma.user.findUnique({
+    where: { id },
+    include: {
+      task: true,
+    },
+  });
+  res.json(result);
+};
