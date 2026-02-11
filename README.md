@@ -39,9 +39,9 @@ completed:=false
 ```
 2. Update One Task By User ID And Task ID
 ```Bash
-http put localhost:3000/api/v1/tasks/update-one-task-by-user-id-and-task-id/:user-id/:task-id \
-title="Learn JavaScript"
-complated:=false
+http put localhost:3000/api/v1/tasks/update-one-task-by-id/:task-id \
+title="Learn JavaScript" \
+completed:=true
 ```
 3. Delete One Task By User ID And Task ID
 ```Bash

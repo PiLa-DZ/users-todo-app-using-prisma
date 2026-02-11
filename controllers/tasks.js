@@ -8,3 +8,14 @@ export const createOneTaskByUserId = async (req, res) => {
   });
   res.json(result);
 };
+
+// 2. Update One Task By Task ID
+export const updateOneTaskById = async (req, res) => {
+  const id = Number(req.params.id);
+  const { title, completed } = req.body;
+  const result = await prisma.task.update({
+    where: { id },
+    data: { title, completed },
+  });
+  res.json(result);
+};
