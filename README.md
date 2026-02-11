@@ -16,9 +16,9 @@ name=Amin
 ```Bash
 http get localhost:3000/api/v1/users/get-all-users
 ```
-3. Get One User
+3. Get One User By ID
 ```Bash
-http get localhost:3000/api/v1/users/get-one-user/:id
+http get localhost:3000/api/v1/users/get-one-user-by-id/:id
 ```
 4. Update One User By ID
 ```Bash
