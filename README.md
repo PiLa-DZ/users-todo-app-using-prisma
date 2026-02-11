@@ -30,11 +30,12 @@ name=Amin
 http delete localhost:3000/api/v1/users/delete-one-user-by-id/:id
 ```
 ## Tasks EndPoints
-1. Create New Task By User ID
+1. Create One Task By User ID
 ```Bash
-http post localhost:3000/api/v1/tasks/create-one-task-by-user-id/:user-id \
-title="Learn JavaScript"
-complated=false
+http post localhost:3000/api/v1/tasks/create-one-task-by-user-id \
+userId:=1 \
+title="Learn JavaScript" \
+completed:=false
 ```
 2. Update One Task By User ID And Task ID
 ```Bash

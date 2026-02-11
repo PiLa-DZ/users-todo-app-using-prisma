@@ -1,7 +1,7 @@
 import express from "express";
-import { test } from "../controllers/tasks.js";
+import { createOneTaskByUserId } from "../controllers/tasks.js";
 const router = express.Router();
 
-router.get("/", test);
+router.post("/create-one-task-by-user-id", createOneTaskByUserId);
 
 export default router;
