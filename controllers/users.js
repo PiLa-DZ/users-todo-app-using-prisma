@@ -23,3 +23,14 @@ export const getOneUserById = async (req, res) => {
   });
   res.json(result);
 };
+
+// 4. Update One User By ID
+export const updateOneUserById = async (req, res) => {
+  const id = Number(req.params.id);
+  const { name } = req.body;
+  const result = await prisma.user.update({
+    where: { id },
+    data: { name },
+  });
+  res.json(result);
+};
