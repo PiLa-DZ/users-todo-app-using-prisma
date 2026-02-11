@@ -43,9 +43,9 @@ http put localhost:3000/api/v1/tasks/update-one-task-by-id/:task-id \
 title="Learn JavaScript" \
 completed:=true
 ```
-3. Delete One Task By User ID And Task ID
+3. Delete One Task By ID
 ```Bash
-http delete localhost:3000/api/v1/tasks/update-one-task-by-user-id-and-task-id/:user-id/:task-id
+http delete localhost:3000/api/v1/tasks/delete-one-task-by-id/:task-id
 ```
 
 

@@ -19,3 +19,12 @@ export const updateOneTaskById = async (req, res) => {
   });
   res.json(result);
 };
+
+// 3. Delete One Task By ID
+export const deleteOneTaskById = async (req, res) => {
+  const id = Number(req.params.id);
+  const result = await prisma.task.delete({
+    where: { id },
+  });
+  res.json(result);
+};
